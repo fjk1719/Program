@@ -1,0 +1,294 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\LTCLOOk.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\LTCLOOk.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 207, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 LTCLOOk"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "LTCLOOk，1.3限时免费版本",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "2014年1月9日版本",IDC_STATIC,111,109,81,12
+    DEFPUSHBUTTON   "确定",IDOK,150,149,50,14,WS_GROUP
+END
+
+IDD_LTCLOOK_DIALOG DIALOGEX 0, 0, 566, 353
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION 
+"okcoin网BTC(莱特币)看盘助手[限时免费版本版1.2]                                                   作者FJK   QQ:171938416"
+MENU IDR_MENU1
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "最近成交价:",IDC_STATIC,22,18,46,9
+    EDITTEXT        IDC_EDIT_LAST,18,42,41,13,ES_AUTOHSCROLL | WS_DISABLED
+    CTEXT           "买一价:",IDC_STATIC,72,18,46,9
+    EDITTEXT        IDC_EDIT_BUY,72,42,41,13,ES_AUTOHSCROLL | WS_DISABLED
+    CTEXT           "卖一价:",IDC_STATIC,126,18,46,9
+    EDITTEXT        IDC_EDIT_SELL,126,42,41,13,ES_AUTOHSCROLL | WS_DISABLED
+    CTEXT           "最高价:",IDC_STATIC,180,18,46,9
+    CTEXT           "最低价:",IDC_STATIC,234,18,46,9
+    CTEXT           "成交量:",IDC_STATIC,288,18,46,9
+    EDITTEXT        IDC_EDIT_HIGH,180,42,41,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_LOW,234,42,41,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_VOL,288,42,41,13,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "买入",IDC_STATIC,7,58,161,288
+    GROUPBOX        "卖出",IDC_STATIC,180,59,151,287
+    LTEXT           "  买入         买入价         委单量   ",IDC_STATIC,12,72,143,9
+    LTEXT           "  卖入          卖出价            委单量   ",IDC_STATIC,192,72,143,9
+    GROUPBOX        "",IDC_STATIC,343,132,216,214
+    LTEXT           "   成交时间                     成交价                     成交量",IDC_STATIC,346,139,206,13
+    GROUPBOX        "成交价格预警",IDC_STATIC,342,18,208,113
+    PUSHBUTTON      "Button1",IDC_BUTTON1,501,7,39,12,NOT WS_VISIBLE
+    LTEXT           "价格高于:",IDC_STATIC,352,35,39,11
+    EDITTEXT        IDC_EDIT2,413,35,39,12,ES_AUTOHSCROLL
+    LTEXT           "价格低于:",IDC_STATIC,352,58,39,11
+    EDITTEXT        IDC_EDIT3,414,59,39,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "预警",IDC_BUTTON2,504,35,39,12
+    PUSHBUTTON      "复制数据",IDC_BTN_GETMSG,504,111,39,12
+END
+
+IDD_DLG_REGIST DIALOGEX 0, 0, 331, 196
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "注册窗口"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_HardID,69,33,148,19,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "机器码为:",IDC_STATIC,19,36,44,16
+    LTEXT           "注册码为:",IDC_STATIC,19,74,44,16
+    PUSHBUTTON      "注册",IDC_BTN_REG,131,110,92,22
+    EDITTEXT        IDC_EDIT_HardKEY,69,71,148,19,ES_AUTOHSCROLL
+    PUSHBUTTON      "复制机器码",IDC_BTN_CPYID,230,34,70,17
+    PUSHBUTTON      "写入注册码",IDC_BTN_WHARDKEY,230,73,70,17
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 262, 252
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "预警设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,95,205,50,14
+    LTEXT           "高于预警值铃声自定义",IDC_STATIC,21,36,94,13
+    LTEXT           "低于预警值铃声自定义",IDC_STATIC,18,73,94,13
+    GROUPBOX        "预警铃声自定义",IDC_STATIC,7,20,248,100
+    EDITTEXT        IDC_EDIT1,19,54,221,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,19,94,221,11,ES_AUTOHSCROLL
+    PUSHBUTTON      ".......",IDC_BUTTON1,194,33,46,11
+    PUSHBUTTON      "..........",IDC_BUTTON4,194,76,46,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "FJK出品 QQ:171938416"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.3."
+            VALUE "InternalName", "LTCLOOk.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "LTCLOOk.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_LTCLOOK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 559
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 346
+    END
+
+    IDD_DLG_REGIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 324
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    MENUITEM "更新设置",                        ID_32772, INACTIVE
+    MENUITEM "预警设置",                        ID_M_ALERT, INACTIVE
+    MENUITEM "软件注册",                        ID_DLG_REGBOX, INACTIVE
+    MENUITEM "关于",                          ID_ABOUT, CHECKED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE1               WAVE                    "res\\我赚钱了.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 LTCLOOk(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\LTCLOOk.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
