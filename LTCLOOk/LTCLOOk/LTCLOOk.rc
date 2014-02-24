@@ -102,23 +102,23 @@ BEGIN
     EDITTEXT        IDC_EDIT_BUY,72,42,41,13,ES_AUTOHSCROLL | WS_DISABLED
     CTEXT           "卖一价:",IDC_STATIC,126,18,46,9
     EDITTEXT        IDC_EDIT_SELL,126,42,41,13,ES_AUTOHSCROLL | WS_DISABLED
-    CTEXT           "最高价:",IDC_STATIC,180,18,46,9
-    CTEXT           "最低价:",IDC_STATIC,234,18,46,9
-    CTEXT           "成交量:",IDC_STATIC,288,18,46,9
+    LTEXT           "最高价:",IDC_STATIC,180,18,46,9
+    LTEXT           "最低价:",IDC_STATIC,234,18,46,9
+    LTEXT           "成交量:",IDC_STATIC,288,18,46,9
     EDITTEXT        IDC_EDIT_HIGH,180,42,41,13,ES_AUTOHSCROLL | WS_DISABLED
     EDITTEXT        IDC_EDIT_LOW,234,42,41,13,ES_AUTOHSCROLL | WS_DISABLED
-    EDITTEXT        IDC_EDIT_VOL,288,42,41,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_VOL,288,42,52,13,ES_AUTOHSCROLL | WS_DISABLED
     GROUPBOX        "买入",IDC_STATIC,7,58,161,288
     GROUPBOX        "卖出",IDC_STATIC,180,59,151,287
     LTEXT           "  买入         买入价         委单量   ",IDC_STATIC,12,72,143,9
-    LTEXT           "  卖入          卖出价            委单量   ",IDC_STATIC,192,72,143,9
+    LTEXT           "  卖入          卖出价            委单量   ",IDC_STATIC,192,72,134,9
     GROUPBOX        "",IDC_STATIC,343,132,216,214
     LTEXT           "   成交时间                     成交价                     成交量",IDC_STATIC,346,139,206,13
     GROUPBOX        "成交价格预警",IDC_STATIC,342,18,208,113
     PUSHBUTTON      "Button1",IDC_BUTTON1,501,7,39,12,NOT WS_VISIBLE
-    LTEXT           "价格高于:",IDC_STATIC,352,35,39,11
+    LTEXT           "突破:",IDC_STATIC,352,35,39,11
     EDITTEXT        IDC_EDIT2,413,35,39,12,ES_AUTOHSCROLL
-    LTEXT           "价格低于:",IDC_STATIC,352,58,39,11
+    LTEXT           "下穿:",IDC_STATIC,352,58,39,11
     EDITTEXT        IDC_EDIT3,414,59,39,12,ES_AUTOHSCROLL
     PUSHBUTTON      "预警",IDC_BUTTON2,504,35,39,12
     PUSHBUTTON      "复制数据",IDC_BTN_GETMSG,504,111,39,12

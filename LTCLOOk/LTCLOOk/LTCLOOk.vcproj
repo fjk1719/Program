@@ -294,15 +294,11 @@
 				>
 			</File>
 			<File
-				RelativePath="E:\FFOutput\我赚钱了.wav"
+				RelativePath=".\res\我赚钱了.wav"
 				>
 			</File>
 			<File
 				RelativePath=".\我赚钱了.wav"
-				>
-			</File>
-			<File
-				RelativePath="..\..\..\..\..\..\OutPath\我赚钱了.wav"
 				>
 			</File>
 		</Filter>

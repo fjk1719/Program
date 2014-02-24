@@ -101,7 +101,7 @@ public:
 	float m_low;
 	bool  ishighalert;
 	bool  islowalert;
-	BOOL  IsWindowXP(); //版本检查是否为windowsxp
+	BOOL  IsWindowXP(); //版本检查是否为windowsxp 
 	BOOL m_b_WindowXP;
 
 	afx_msg void OnBnClickedButton2();
